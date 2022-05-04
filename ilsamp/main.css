@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif !important;
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.resrow {
+  padding: 0px 10rem;
+}
+
+.right {
+  text-align: end !important;
+}
+.head-flex {
+  display: flex !important;
+}
+@media (max-width: 1200px) {
+  .resrow {
+    padding: 0rem 2rem;
+  }
+}
+
+.carousel-text {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+.scrolltop {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.logo {
+  margin-left: 6rem;
+}
+.logo img {
+  width: 172px;
+  height: 37px;
+}
+
+.content {
+  max-width: 1700px;
+  padding: 0px 45px;
+}
+
+.icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.icon.menu-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.icon.cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.icon.hide {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  background: #fff;
+  padding: 20px 0px;
+  z-index: 400;
+  transition: all 0.3s ease;
+}
+
+.header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+.logo a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.active {
+  border-bottom: 3px solid #e51937;
+}
+.menu-list li a {
+  padding: 10px 0px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1400px) {
+  body.disabledScroll {
+    overflow: hidden;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  .menu-list {
+    position: fixed !important;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    display: block !important;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 45px 0px;
+    z-index: 9999;
+  }
+
+  .menu-list.active {
+    left: 0%;
+  }
+
+  .menu-list li {
+    margin-top: 35px;
+  }
+
+  .menu-list li a {
+    font-size: 23px;
+  }
+}
+
+.banner {
+  height: 641px;
+  background: url("images/1.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+}
+.banner-heading p {
+  color: white;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about,
+.events,
+.apply,
+.programs,
+.external,
+.scholarship {
+  padding: 4rem;
+}
+
+.about img {
+  object-fit: cover;
+  object-position: 0px -10px;
+  height: 475px;
+}
+.about-content p {
+  text-align: justify;
+  color: #9199ac;
+  font-weight: 400;
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif !important;
+  font-weight: 500;
+  font-size: 34px;
+  color: #000000;
+  letter-spacing: 2px;
+}
+
+.sidebar {
+  padding: 6rem 0rem;
+}
+.items {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.hr {
+  width: 50%;
+  margin-left: 110px;
+  border: 1px solid #c4c4c4;
+}
+.line {
+  margin-left: 50px;
+  height: 300px;
+  border: 2px solid #e51937;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+}
+.dot {
+  border-left: 25px solid #e51937;
+  border-radius: 50%;
+  margin-left: -13px;
+}
+.sidebar-list li {
+  margin-top: 1.3rem;
+  list-style-type: none;
+}
+.sidebar-list a {
+  padding-left: 50px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* testimonials */
+.testimonials {
+  padding: 0rem 0rem 0rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial {
+  margin-top: 30px;
+}
+.testimonial img {
+  height: 92px;
+  width: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.testimonial-content {
+  padding-top: 10px;
+  letter-spacing: 0.1px;
+  text-align: justify;
+  color: #000000;
+  font-size: 13px;
+  line-height: 25px;
+}
+.sidebar-active {
+  color: #e51937 !important;
+  margin-left: -13px;
+}
+
+/* carousel */
+.view img {
+  height: 500px;
+}
+
+.programs {
+  color: #9199ac;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.external {
+  background: url("images/background.png");
+  object-fit: cover;
+  object-position: center;
+}
+
+.scholarship {
+  margin-top: 5rem;
+  background: url("images/scholarship.jpg");
+  object-fit: cover;
+  object-position: center;
+}
+
+.gift {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+@media (max-width: 1440px) {
+  .logo {
+    margin-left: 3rem;
+  }
+
+  .menu-list li a {
+    margin-left: 30px;
+  }
+
+  .banner {
+    height: 541px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-heading p {
+    font-size: 30px;
+  }
+
+  .about-content p {
+    font-size: 12px;
+  }
+  .about .card {
+    height: 500px;
+  }
+  .about img {
+    height: 300px;
+  }
+
+  .items {
+    padding-left: 10px;
+  }
+}
+
+.announcements {
+  margin-top: 5rem;
+}
+
+.announcements .content {
+  background: #f7f6f0;
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  overflow-y: auto;
+}
+
+.announcements .content .announcement {
+  position: relative;
+}
+
+.announcements .content::-webkit-scrollbar {
+  display: none;
+}
+
+.mtitle {
+  text-align: center !important;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mcard {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2); */
+  position: relative;
+}
+
+.mcard-content {
+  padding: 1rem;
+}
+.announcement-name {
+  font-size: 22px;
+  font-weight: 400;
+  color: black;
+}
+
+.timestamp {
+  font-size: 14px;
+  color: grey;
+}
+
+.category {
+  padding: 0.5rem 0;
+  font-size: 14px;
+  color: #7772e5;
+}
+
+.para {
+  margin-top: 0.2rem;
+  font-size: 16px;
+  color: black;
+}
+
+.read-morebtn,
+.read-lessbtn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: blue;
+  position: absolute;
+  right: 2rem;
+}
+
+.read-morebtn:focus,
+.read-lessbtn:focus {
+  outline: none;
+  border: none;
+}
+
+.read-lessbtn {
+  display: none;
+}
