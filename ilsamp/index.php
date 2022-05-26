@@ -131,8 +131,8 @@ include("connection.php");
                         <p class="text-italic text-dark" style="text-transform:capitalize;font-size : 16px;">
                         <b>
                         Apply to the
-                                        Armour R&D Program by April 18, 2022. Click <a
-                                            href="https://docs.google.com/forms/d/1EyrdWvwrNYMhmP76ml_nHQr2T6DqEnvO2XbfzSm-EpY/edit"> <b>here</b> </a>
+                                        ILSPRA Scholarship Program by May 30, 2022. Click <a
+                                            href="https://forms.gle/sa7EeTVj1KV7x54c8"> <b>here</b> </a>
                                         to apply.
                         </b>
                          </p>
@@ -334,8 +334,8 @@ institutional barriers</p>
                                     <h4 class="text-white">APPLY</h4>
                                     <p class="text-italic text-white" style="text-transform:capitalize;">
                                             Apply to the
-                                        Armour R&D Program by April 18, 2022. Click <a
-                                            href="https://docs.google.com/forms/d/1EyrdWvwrNYMhmP76ml_nHQr2T6DqEnvO2XbfzSm-EpY/edit">here</a>
+                                        ILSPRA Scholarship Program by May 30, 2022. Click <a
+                                            href="https://forms.gle/YtjGY2GycvPoJXGB9">here</a>
                                         to apply.
                                 </p>
                                 </blockquote>
@@ -350,21 +350,24 @@ institutional barriers</p>
                                 <h3 class="title  mt-2">APPLICATION <br> ELIGIBILITY</h3> <br>
                                </div>
                                <br>
-                                <p style="color: #9199ac;" >Minority undergraduate students who are currently enrolled at Illinois Institute
-                                    of Technology
-                                    are eligible to apply for the ILSAMP Undergraduate STEM Scholarship program. All
-                                    Scholars must
-                                    complete an undergraduate research project and present their findings at a STEM
-                                    symposium.
-                                    Applicants must be:</p>
-                                <div class="ml-4 text-muted">
+                                <p style="color: #9199ac;" >Illinois Louis Stokes STEM Pathway and Research Alliance (ILSPRA) is pleased 
+                                to announce the Summer 2022 scholarship program. This Summer 2022 scholarship program is aimed to support 
+                                students' research activities with amounts ranging from $1,000 to $4,000. </p>
+                                
+                                <p style="color: #9199ac;" >In order to participate in ILSPRA Summer 2022 scholarship program, students 
+                                must complete an application, including details on the proposed or current research activities. It is 
+                                expected that at the end of the semester, students showcase their work with a poster presentation that 
+                                will take place next coming Fall. Students are also encouraged to showcase their work in the ILSAMP 
+                                regional symposium or another related research conference in the student field. </p>
+                                
+                                <!-- <div class="ml-4 text-muted">
                                     <ul>
                                         <li>United States citizens or Permanent Residents.</li>
                                     <li>Full-time undergraduate students.</li>
                                     <li>Science, technology, engineering, or mathematics (STEM) majors.</li>
                                     <li>Members of an underrepresented minority group.</li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -506,12 +509,11 @@ institutional barriers</p>
                             $result = mysqli_query($link , $sql);
                             while ($row = mysqli_fetch_array($result)) {
                               $id = $row['id'];
-                                 $annname = $row['announcementname'];
-                    $timestamp = $row['timestamp'];
-                    $categroy = $row['category'];
-                    $datetime = $row['datetime'];
-                    $announcement = $row['announcement'];
-
+                                $annname = $row['announcementname'];
+                                $timestamp = $row['timestamp'];
+                                $categroy = $row['category'];
+                                $datetime = $row['datetime'];
+                                $announcement = $row['announcement'];
                            ?>
 
                                 <br>
