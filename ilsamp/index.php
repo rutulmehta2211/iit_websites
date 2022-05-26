@@ -131,7 +131,7 @@ include("connection.php");
                         <p class="text-italic text-dark" style="text-transform:capitalize;font-size : 16px;">
                         <b>
                         Apply to the
-                                        ILSPRA Scholarship Program by May 30, 2022. Click <a
+                                        ILSPRA Scholarship Program by June 15, 2022. Click <a
                                             href="https://forms.gle/sa7EeTVj1KV7x54c8"> <b>here</b> </a>
                                         to apply.
                         </b>
@@ -334,7 +334,7 @@ institutional barriers</p>
                                     <h4 class="text-white">APPLY</h4>
                                     <p class="text-italic text-white" style="text-transform:capitalize;">
                                             Apply to the
-                                        ILSPRA Scholarship Program by May 30, 2022. Click <a
+                                        ILSPRA Scholarship Program by June 15, 2022. Click <a
                                             href="https://forms.gle/YtjGY2GycvPoJXGB9">here</a>
                                         to apply.
                                 </p>
